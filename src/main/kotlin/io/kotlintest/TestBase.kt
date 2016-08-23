@@ -15,7 +15,7 @@ import java.util.concurrent.Executors
 import java.util.concurrent.Future
 
 @RunWith(KTestJUnitRunner::class)
-abstract class TestBase : PropertyTesting(), Matchers, TableTesting {
+abstract class TestBase() : PropertyTesting(), Matchers, TableTesting {
 
   private val closeablesInReverseOrder = LinkedList<Closeable>()
 
